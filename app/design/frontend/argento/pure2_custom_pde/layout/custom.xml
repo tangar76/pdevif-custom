@@ -1,0 +1,28 @@
+<layout version="0.1.0">
+    <default>
+
+        <reference name="header">
+            <action method="setData">
+                <key>additional_html</key>
+                <value><![CDATA[</p>
+<ul class="contacts">
+    <li class="phone strong">+33 (0) 4 91 31 44 22</li>
+    <li>
+        <a class="fa-stack" href="#">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </a>
+    </li>
+    <li>
+        <a class="fa-stack" href="#">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i>
+        </a>
+    </li>
+</ul>
+<p style="display: none;">]]></value>
+            </action>
+        </reference>
+
+    </default>
+</layout>
