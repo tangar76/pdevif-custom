@@ -1,0 +1,127 @@
+/* >>> HEADER <<< */
+.top-toolbar-container {
+    background-color: #F6C9F0;
+}
+
+.top-toolbar {
+    color: #000;
+    padding: 5px;
+}
+
+.top-toolbar .links a {
+    background-image: none !important;
+    color: #000;
+}
+
+.top-toolbar .quick-links {
+    display: flex;
+    float: none;
+}
+.top-toolbar .quick-links .links {
+    flex: 1;
+}
+.top-toolbar .quick-links .welcome-msg {
+    flex: 2;
+    text-align: center;
+}
+.top-toolbar .links li {
+    float: none;
+}
+
+.header {
+    position: relative;
+}
+
+.logo-wrapper {
+    float: left;
+}
+
+.top-wrapper {
+    float: right;
+}
+
+#search_mini_form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.header-container .form-search #search {
+    border: 1px #0141E1 solid;
+    border-radius: 2px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.header-container .form-search button {
+    float: none;
+    margin-left: -30px;
+    color: #0141E1;
+}
+
+.header-container .header-cart {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.top-cart-links {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.top-cart-links li {
+    background-image: none;
+}
+
+.top-cart-links li a {
+    font-size: 13px;
+    margin: 0;
+    color: #000;
+}
+
+.top-cart-links li.top-checkout {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.top-cart-links li.top-checkout a {
+    color: #E33FC4;
+}
+
+.top-cart-links li.top-cart {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header-cart .top-cart .amount {
+    background: url('../images/basket.png') no-repeat 0 0;
+    color: transparent;
+    margin-top: -6px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.header-content {
+    background-color: #0141E1;
+}
+
+.header-content.is_stuck {
+    background-color: rgba(1, 65, 225, .8) !important;
+}
+
+@media (min-width: 769px) {
+    .nav-container .navpro a.level-top,
+    .nav-container .navpro div.level-top a,
+    .nav-container .navpro .active div.level-top a,
+    .nav-container .navpro .active a.level-top {
+        color: #FFF;
+    }
+
+    .level-top:not(.over) > .nav-toggler {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAWlBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9jZLFEAAAAHXRSTlMAAQJydHZ3eHmAgYKDhIWGh4iMjo+QkZKTlJWWl4kf2AsAAACcSURBVHja7da7DsIwDIXhmFJS6J3eC37/10SqDGMlfCJ58dn/b/CSBJ/Pd7qiJ6iPzB0i3JghIedjrVp4MijQAAujCI2hMIlQGwozLCwiVIbCKkKpFjZY2JMJD7Xw+gpBuctbhDsuwIBRDx6Rfj1hfWnU74n6Stlvifpa2a/G/SJ9Y9TP4OM6gX3I9L3sygx+knLp9Ys9BZ/P98c+vNUhkUAxt+IAAAAASUVORK5CYII=);
+    }
+}
