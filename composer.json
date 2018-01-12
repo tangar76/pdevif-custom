@@ -1,0 +1,7 @@
+{
+    "name": "pdevif-custom",
+    "type": "magento-module",
+    "homepage": "https://github.com/tangar76/pdevif-custom",
+    "license": "OSL-3.0",
+    "description": "Argento Pure2 based custom theme for Magento 1"
+}
