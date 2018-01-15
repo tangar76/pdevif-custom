@@ -24,5 +24,11 @@
             </action>
         </reference>
 
+        <reference name="footer">
+            <action method="unsetChild">
+                <name>footer_links</name>
+            </action>
+        </reference>
+
     </default>
 </layout>
