@@ -52,19 +52,6 @@
 .price-box .regular-price {
     line-height: 1.8em;
 }
-.block-highlight .page-link a {
-    border-color: #0141E1;
-    background-color: #0141E1;
-    border-radius: 3px;
-    border-width: 2px;
-    font-weight: bold;
-}
-.block-highlight .page-link a:hover {
-    color: #0141E1;
-    border-color: #0141E1;
-    border-width: 2px;
-    background-color: #F6C9F0;
-}
 
 /* >>> HEADER <<< */
 .top-toolbar-container {
@@ -381,4 +368,18 @@
 .cms-index-index .easytabs li:hover.active .easytabs-a {
     background-color: #E33FC4;
     padding: 5px 20px;
+}
+.cms-index-index .block-highlight .page-link a {
+    border-color: #0141E1;
+    background-color: #0141E1;
+    border-radius: 3px;
+    border-width: 2px;
+    color: #FFF;
+    font-weight: bold;
+}
+.cms-index-index .block-highlight .page-link a:hover {
+    color: #0141E1;
+    border-color: #0141E1;
+    border-width: 2px;
+    background-color: #F6C9F0;
 }
