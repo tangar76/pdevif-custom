@@ -43,11 +43,19 @@
         </div>
     </div>
 </div>
+
 <div class="row jumbotron grayish">
     <div class="container homepage-banners-grayish">
             {{widget type="easybanner/widget_placeholder" placeholder_name="pdevif-homepage-grayish"}}
         </div>
 </div>
+
+<div class="row jumbotron">
+    <div class="container">
+        {{widget type="easytabs/widget" filter_tabs="sale,bestsellers,popular,editors-choice,new-arrivals" template="tm/easytabs/tabs.phtml"}}
+    </div>
+</div>
+
 <div class="row jumbotron">
     <div class="container block-homepage-banner">
         {{widget type="easybanner/widget_placeholder" placeholder_name="argento-pure2-home"}}
