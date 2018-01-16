@@ -5,7 +5,12 @@
 .icon-section:hover .fa-circle, .fa-stack:hover .fa-circle {
     color: #E33FC4;
 }
-
+.main .row.jumbotron:last-child {
+    margin-bottom: 0;
+}
+.container .easytabs-wrapper {
+    margin-bottom: 0;
+}
 .container-half {
     max-width: 512px;
 }
@@ -19,6 +24,9 @@
     font-size: 12px;
     padding: 8px;
     text-align: center;
+}
+.jumbotron-slider {
+    margin-bottom: 0 !important;
 }
 .slick-slider .slick-slide {
     padding: 10px 0;
