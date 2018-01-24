@@ -375,6 +375,7 @@
 .cms-index-index .easytabs li.active .easytabs-a,
 .cms-index-index .easytabs li:hover.active .easytabs-a {
     background-color: #E33FC4;
+    border-color: #E33FC4;
     padding: 5px 20px;
 }
 .cms-index-index .block-highlight .page-link a {
