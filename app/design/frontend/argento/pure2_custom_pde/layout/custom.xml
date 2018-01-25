@@ -6,15 +6,15 @@
                 <key>additional_html</key>
                 <value><![CDATA[</p>
 <ul class="contacts">
-    <li class="phone strong">+33 (0) 4 91 31 44 22</li>
+    <li class="phone strong"><a href="tel:+3349131442">+33 (0) 4 91 31 44 22</a></li>
     <li>
-        <a class="fa-stack" href="#">
+        <a class="fa-stack" href="https://www.facebook.com/TwirlingBoutique/">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
         </a>
     </li>
     <li>
-        <a class="fa-stack" href="#">
+        <a class="fa-stack" href="https://www.pinterest.fr/twirlingboutiq/">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i>
         </a>

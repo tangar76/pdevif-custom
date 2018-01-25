@@ -14,6 +14,11 @@
 .container-half {
     max-width: 512px;
 }
+@media (min-width: 1281px) {
+    .container-half {
+        max-width: 640px;
+    }
+}
 
 .argento-slider .block-content {
     background-color: transparent;
@@ -30,7 +35,6 @@
 }
 .slick-slider .slick-slide {
     padding: 10px 0;
-    /* height: auto; */
 }
 .slick-slide img {
     margin: 0 auto;
@@ -65,8 +69,20 @@
 .price-box .regular-price {
     line-height: 1.8em;
 }
+.products-grid .product-name a {
+    white-space: normal;
+}
+
+@media (min-width: 640px) {
+    .custom-col-width-20perc {
+        width: 20%;
+    }
+}
 
 /* >>> HEADER <<< */
+.quick-links .contacts {
+    display: none;
+}
 .top-toolbar-container {
     background-color: #F6C9F0;
 }
@@ -105,17 +121,19 @@
     flex: 1;
     order: 1;
     text-align: left;
+    display: block;
 }
 .top-toolbar .quick-links .contacts li {
     display: inline;
 }
 
-.top-toolbar .quick-links .contacts li.phone {
+.top-toolbar .quick-links .contacts li.phone a {
     color: #E33FC4;
 }
 
 .top-toolbar .quick-links .welcome-msg {
     flex: 2;
+    font-size: 14px;
     text-align: center;
     order: 2;
 }
@@ -144,14 +162,6 @@
     color: #0141E1;
 }
 
-.header-container .header-cart {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-}
-
 .top-cart-links {
     display: flex;
     flex-direction: row-reverse;
@@ -169,11 +179,14 @@
 
 .top-cart-links li.top-checkout {
     font-weight: bold;
-    margin-left: 30px;
+    margin-left: 22px;
 }
+
 
 .top-cart-links li.top-checkout a {
     color: #E33FC4;
+    padding-left: 18px;
+    border-left: 2px solid #E33FC4;
 }
 
 .top-cart-links li.top-cart {
@@ -181,8 +194,14 @@
     flex-direction: row-reverse;
 }
 
+.header-container .form-search #search {
+    font-size: 14px;
+    height: 40px;
+    width: 320px;
+}
+
 .header-cart .top-cart .amount {
-    background: url('../images/basket.png') no-repeat 0 0;
+    background: url('../images/basket-pinky.png') no-repeat 0 0;
     color: transparent;
     margin-top: -6px;
     margin-right: 5px;
@@ -192,6 +211,12 @@
 
 .header-content.is_stuck {
     background-color: rgba(1, 65, 225, .8) !important;
+}
+
+@media (min-width: 1281px) {
+    .header-container .form-search #search {
+        width: 380px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -207,6 +232,14 @@
         background-color: #0141E1;
     }
 
+    .header-container .header-cart {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
     .nav-container .navpro a.level-top,
     .nav-container .navpro div.level-top a,
     .nav-container .navpro .active div.level-top a,
@@ -214,8 +247,23 @@
         color: #FFF;
     }
 
-    .level-top:not(.over) > .nav-toggler {
+    .level-top > .nav-toggler {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAWlBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9jZLFEAAAAHXRSTlMAAQJydHZ3eHmAgYKDhIWGh4iMjo+QkZKTlJWWl4kf2AsAAACcSURBVHja7da7DsIwDIXhmFJS6J3eC37/10SqDGMlfCJ58dn/b/CSBJ/Pd7qiJ6iPzB0i3JghIedjrVp4MijQAAujCI2hMIlQGwozLCwiVIbCKkKpFjZY2JMJD7Xw+gpBuctbhDsuwIBRDx6Rfj1hfWnU74n6Stlvifpa2a/G/SJ9Y9TP4OM6gX3I9L3sygx+knLp9Ys9BZ/P98c+vNUhkUAxt+IAAAAASUVORK5CYII=);
+    }
+
+    .nav-container .navpro .level-top.last {
+        background-color: #E33FC4;
+        margin: 0;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container .navpro-responsive a.level-top,
+    .nav-container .navpro-responsive div.level-top a,
+    .nav-container .navpro-responsive ul .nav-a,
+    .nav-container .navpro-responsive ul .nav-sibling-title a {
+        color: #111 !important;
     }
 }
 
@@ -286,6 +334,12 @@
     float: none;
     width: auto;
 }
+@media (max-width: 639px) {
+    .footer-cms .custom-col-width-20perc:nth-child(5) {
+        float: none;
+        margin: 0 auto;
+    }
+}
 @media (min-width: 769px ), (max-width: 480px) {
     .footer-cms-container .block-subscribe .block-content .input-box {
         flex: 2;
@@ -327,6 +381,14 @@
     padding: 0;
 }
 
+.cms-index-index .easyslide-link {
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+.swiper-container-autoheight .swiper-slide {
+    overflow: hidden;
+}
 
 @media (min-width: 769px) {
     .jumbotron.sliced {
@@ -341,6 +403,10 @@
     }
     .jumbotron.sliced .slice-2 .container-half {
         margin-left: 0;
+    }
+    .cms-index-index .easyslide-link {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
