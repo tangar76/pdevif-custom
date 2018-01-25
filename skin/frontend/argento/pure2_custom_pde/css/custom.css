@@ -30,12 +30,17 @@
 }
 .slick-slider .slick-slide {
     padding: 10px 0;
+    /* height: auto; */
 }
 .slick-slide img {
     margin: 0 auto;
 }
 .slick.light .slick-arrow::before {
     color: #FFF;
+}
+
+.slick-list {
+    margin: 15px 30px;
 }
 
 .price-box {
