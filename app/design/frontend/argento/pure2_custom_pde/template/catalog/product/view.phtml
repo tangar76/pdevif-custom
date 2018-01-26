@@ -59,14 +59,13 @@
                 <?php echo $this->getChildHtml('alert_urls') ?>
 
                 <div class="clearer"></div>
-                <?php echo $this->getLayout()->createBlock('core/template')->setTemplate('tm/socialsuite/facebook_like/like.phtml')->toHtml(); ?>
 
                 <?php if ($_product->getShortDescription()):?>
                     <div class="short-description">
                         <div class="std"><?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?></div>
                     </div>
                     <div class="static-short">
-                        <?php 
+                        <?php
                             $blockId = $_product->getShortDescIdbs();
                             $block = Mage::getModel('cms/block')->load($blockId);
                             echo $this->getLayout()->createBlock('cms/block')->setBlockId($block->getIdentifier())->toHtml();
@@ -74,6 +73,7 @@
                     </div>
                 <?php endif;?>
 
+                <?php echo $this->getLayout()->createBlock('core/template')->setTemplate('tm/socialsuite/facebook_like/like.phtml')->toHtml(); ?>
                 <?php echo $this->getTierPriceHtml() ?>
                 <?php echo $this->getChildHtml('extrahint') ?>
 
