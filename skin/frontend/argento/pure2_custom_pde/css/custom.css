@@ -152,10 +152,15 @@
     font-family: "Noto Sans", sans-serif;
 }
 
-.header-container .form-search button {
+.header-container .form-search button,
+.header-container .form-search button:active {
     float: none;
     margin-left: -30px;
     color: #0141E1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
 }
 
 .top-cart-links {
